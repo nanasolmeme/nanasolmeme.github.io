@@ -1,38 +1,38 @@
 /* styles.css */
 
-/* Reset básico */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fuentes de ejemplo (puedes usar Google Fonts o similares) */
+/* Body and Background */
 body {
   font-family: "Arial", sans-serif;
   color: #333;
-  background: url('fondo-sabana.jpg') no-repeat center center fixed; 
-  /* Ajusta tu imagen de fondo tipo sabana */
+  background: url('savannah-background.jpg') no-repeat center center fixed; 
+  /* Replace savannah-background.jpg with your own image */
   background-size: cover;
 }
 
-/* Navegación principal */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.1); /* Un pequeño overlay */
+  background: rgba(255, 255, 255, 0.1); /* Light overlay */
 }
 
-/* Nombre o logo */
+/* Logo or Title */
 .logo h1 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* Menú */
+/* Navigation Links */
 .nav-links {
   list-style-type: none;
   display: flex;
@@ -47,10 +47,10 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #FFD700; /* Dorado al pasar el cursor */
+  color: #FFD700; /* Golden on hover */
 }
 
-/* Sección HERO */
+/* HERO SECTION */
 .hero {
   min-height: 80vh;
   display: flex;
@@ -60,7 +60,7 @@ body {
   background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ); /* Degradado para oscurecer un poco el fondo */
+  ); /* Dark overlay for text readability */
 }
 
 .hero-content {
@@ -85,7 +85,7 @@ body {
   margin-right: 1rem;
 }
 
-/* Botones */
+/* BUTTONS */
 .btn {
   display: inline-block;
   padding: 0.7rem 1.2rem;
@@ -96,34 +96,33 @@ body {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
+/* Primary & Secondary Buttons */
 .primary-btn {
-  background-color: #FF7F50; /* Un tono naranja/coral */
+  background-color: #FF7F50; /* Coral */
 }
-
 .primary-btn:hover {
-  background-color: #FF6347;
+  background-color: #FF6347; /* Tomato */
   transform: translateY(-3px);
 }
 
 .secondary-btn {
-  background-color: #48D1CC; /* Turquesa */
+  background-color: #48D1CC; /* Turquoise */
 }
-
 .secondary-btn:hover {
   background-color: #40B7B1;
   transform: translateY(-3px);
 }
 
+/* Link Buttons (Charts) */
 .link-btn {
-  background-color: #FFA500; /* Naranja */
+  background-color: #FFA500; /* Orange */
 }
-
 .link-btn:hover {
   background-color: #FF8C00;
   transform: scale(1.05);
 }
 
-/* Sección About */
+/* ABOUT SECTION */
 .about-section {
   display: flex;
   flex-wrap: wrap;
@@ -153,7 +152,7 @@ body {
   border-radius: 10px;
 }
 
-/* Sección Charts */
+/* CHARTS SECTION */
 .chart-section {
   text-align: center;
   padding: 3rem 2rem;
@@ -179,7 +178,7 @@ body {
   background-color: #fff;
 }
 
-/* Sección Extra */
+/* EXTRA SECTION */
 .extra-section {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 3rem 2rem;
@@ -194,14 +193,14 @@ body {
 }
 
 .extra-section .social-links .btn {
-  background-color: #696969; /* Gris oscuro */
+  background-color: #696969; /* Dim Gray */
 }
 
 .extra-section .social-links .btn:hover {
   background-color: #505050;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 1rem;
