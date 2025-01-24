@@ -1,0 +1,210 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuentes de ejemplo (puedes usar Google Fonts o similares) */
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background: url('fondo-sabana.jpg') no-repeat center center fixed; 
+  /* Ajusta tu imagen de fondo tipo sabana */
+  background-size: cover;
+}
+
+/* Navegación principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1); /* Un pequeño overlay */
+}
+
+/* Nombre o logo */
+.logo h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Menú */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #FFD700; /* Dorado al pasar el cursor */
+}
+
+/* Sección HERO */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ); /* Degradado para oscurecer un poco el fondo */
+}
+
+.hero-content {
+  max-width: 600px;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+  margin-right: 1rem;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #FF7F50; /* Un tono naranja/coral */
+}
+
+.primary-btn:hover {
+  background-color: #FF6347;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  background-color: #48D1CC; /* Turquesa */
+}
+
+.secondary-btn:hover {
+  background-color: #40B7B1;
+  transform: translateY(-3px);
+}
+
+.link-btn {
+  background-color: #FFA500; /* Naranja */
+}
+
+.link-btn:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
+/* Sección About */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 1rem;
+}
+
+.image-wrapper {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Sección Charts */
+.chart-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.chart-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.chart-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chart-placeholder {
+  border: 2px dashed #333;
+  padding: 2rem;
+  display: inline-block;
+  background-color: #fff;
+}
+
+/* Sección Extra */
+.extra-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.extra-section .social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.extra-section .social-links .btn {
+  background-color: #696969; /* Gris oscuro */
+}
+
+.extra-section .social-links .btn:hover {
+  background-color: #505050;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
