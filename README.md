@@ -1,1 +1,0 @@
-The OFFICIAL Nana MEME Coin
